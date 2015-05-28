@@ -1,0 +1,53 @@
+<script type="text/javascript">
+var query = getQueryParams(document.location.search);
+
+// http://stackoverflow.com/questions/979975/how-to-get-the-value-from-the-url-parameter
+function getQueryParams(queryString) {
+	queryString = queryString.replace(/\&/g,';');
+	queryString = queryString.replace(/\?/,'');
+	queryString = queryString.split(';');
+	var result = [];
+	for (var i = 0; i < queryString.length; i++) {
+		result[queryString[i].split("=")[0]] = queryString[i].split("=")[1];
+	}
+	return result;
+}
+
+function setId(idName,defaultValue) {
+	if (typeof query[idName] == "undefined" || query[idName] == '') {
+		if (idName == "P")
+			document.getElementById(idName).value = "";
+		else
+			document.getElementById(idName).value = defaultValue;
+	} else {
+		document.getElementById(idName).value = query[idName];
+	}
+}
+setId("C","N");
+setId("O","A");
+setId("V","0");
+setId("P","*");
+
+// Add pure-table class to all tables
+for (var i = 0; i < document.querySelectorAll('#contents table').length; i++) {
+	document.querySelectorAll('#contents table')[i].className = 'pure-table';
+}
+
+var loc = window.location.pathname;
+var dir = loc.substring(0, loc.lastIndexOf('/'));
+if (dir == '')
+	dir = '/';
+
+
+document.title = "Index of " + dir;
+document.getElementById('directory-title').innerHTML = "Index of " + dir;
+
+
+
+
+
+
+
+</script>
+</body>
+</html>
