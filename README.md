@@ -8,4 +8,10 @@ Much of the work in this project can be attributed to a 2008 article by Jeff Sta
 
 Icons are by [Cosmin Negoita](https://dribbble.com/shots/2071168-231-Icon-Set) from his free [231 Micons set](http://geticonjar.com/freebies/231-micons/).
 
-Design uses Yahoo's [PureCSS library](http://purecss.io/).
+Design uses Yahoo's [PureCSS library](http://purecss.io/) and is subject to their license. 
+
+## TODO:
+
+- Make CSS mobile-friendly
+- Add JS so any change to the form automatically updates the sort-order
+- Find a quality table-sorting JS library and implement it.
