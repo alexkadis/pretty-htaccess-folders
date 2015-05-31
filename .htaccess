@@ -28,10 +28,10 @@ Options +Indexes
 	IndexOrderDefault Ascending Name
 
 	# ICONS
-	DefaultIcon /__inc/button.png
-	AddIcon /__inc/button.png ^^BLANKICON^^
+	DefaultIcon /__inc/unknown-doc.png
+	AddIcon /__inc/generic-window.png ^^BLANKICON^^
 	AddIcon /__inc/folder.png ^^DIRECTORY^^
-	AddIcon /__inc/up.png ..
+	AddIcon /__inc/up-arrow.png ..
 	AddIcon /__inc/picture.png .jpg .jpeg .jpe .png .gif .mpg .ico .ai .psd .gif
 	AddIconByType (IMG,/__inc/picture.png) image/* img/*
 	AddIcon /__inc/document.png readme .js .log .doc .css .html .md .markdown .txt .pdf .php .rb .py .json
